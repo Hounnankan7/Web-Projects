@@ -145,6 +145,14 @@ header button{
     background-color: #243057;
 }
 
+#scrollUp
+{
+position: fixed;
+bottom : 10px;
+right: -100px;
+/*opacity: 0.5;*/
+}
+
 footer{
     border-top: 5px solid #167967;
     background-color: #20af94;

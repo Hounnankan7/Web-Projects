@@ -7,13 +7,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Genshin Ristorante</title>
         <link rel="stylesheet" href="css/spritesheet.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+        <script>
+            jQuery(function(){
+                $(function () {
+                    $(window).scroll(function () {
+                        if ($(this).scrollTop() > 200 ) { 
+                            $('#scrollUp').css('right','10px');
+                        } else { 
+                            $('#scrollUp').removeAttr( 'style' );
+                        }
+ 
+                    });
+                });
+            });
+        </script>
     </head>
 
     <body>
 
         <!--Bar de nav-->
         <nav>
-            <h1>GENSHIN RISTORANTE</h1>
+            <h1 id="top">GENSHIN RISTORANTE</h1>
             <div class="onglets_menu">
                 <a href="index.html">Home</a>
                 <a href="#menu">Menu</a>
@@ -146,6 +162,10 @@
 
 
         </section>
+
+        <div id="scrollUp">
+            <a href="#top"><img src="images/icons8-slide-up-64.png"/></a>
+        </div>
 
         <footer>
             <h1>Nos Services</h1>
